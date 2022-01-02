@@ -79,12 +79,12 @@ describe('EventHandler', () => {
     it('should handle mouseenter/mouseleave like the native counterpart', done => {
       fixtureEl.innerHTML = [
         '<div class="outer">',
-        '<div class="inner">',
-        '<div class="nested">',
-        '<div class="deep"></div>',
-        '</div>',
-        '</div>',
-        '<div class="sibling"></div>',
+        '  <div class="inner">',
+        '    <div class="nested">',
+        '      <div class="deep"></div>',
+        '    </div>',
+        '  </div>',
+        '  <div class="sibling"></div>',
         '</div>'
       ].join('')
 
