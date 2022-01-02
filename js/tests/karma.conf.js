@@ -58,7 +58,10 @@ const conf = {
   singleRun: true,
   concurrency: Number.POSITIVE_INFINITY,
   client: {
-    clearContext: false
+    clearContext: false,
+    jasmine: {
+      verboseDeprecations: true
+    }
   },
   files: [
     'node_modules/hammer-simulator/index.js',
